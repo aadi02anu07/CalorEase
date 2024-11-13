@@ -9,14 +9,9 @@ from xgboost import XGBRegressor
 from PIL import Image
 import time
 
-uploaded_file1 = st.file_uploader("Choose Calorie CSV file", type="csv")
-uploaded_file2 = st.file_uploader("Choose Exercise CSV file", type="csv")
-if uploaded_file1 and uploaded_file2 is not None:
-    # Load the CSV files into DataFrames
-    df1 = pd.read_csv(uploaded_file1)
-    df2 = pd.read_csv(uploaded_file2)
-else:
-    st.write("Please upload a CSV file to view data.")
+# Load the CSV files into DataFrames
+df1 = pd.read_csv("G:\My Drive\CalPred\calories.csv")
+df2 = pd.read_csv("G:\My Drive\CalPred\exercise.csv")
 
 image = Image.open("G:/My Drive/CalPred/Burn.png")
 st.image(image, caption="Calorie Predictor", use_column_width=True)

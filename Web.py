@@ -58,4 +58,4 @@ with st.spinner('Calculating...'):
 predicated_calories = model.predict(user_input_scaled)  # Use the trained XGBRegressor model
 
 # Print the predicted median calories
-st.write(f'The predicted median calories value for given input is: {predicated_calories[0]}')
+st.write(f'The predicted calories value for given input is: {predicated_calories[0]}')

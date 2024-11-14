@@ -12,7 +12,7 @@ import time
 df1 = pd.read_csv("calories.csv")
 df2 = pd.read_csv("exercise.csv")
 
-image = Image.open("Burn.png")
+image = Image.open("burn.png")
 st.image(image, caption="Calorie Predictor", use_column_width=True)
 
 # Take inputs

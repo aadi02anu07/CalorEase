@@ -9,10 +9,10 @@ from PIL import Image
 import time
 
 # Load the CSV files into DataFrames
-df1 = pd.read_csv("G:\My Drive\CalPred\calories.csv")
-df2 = pd.read_csv("G:\My Drive\CalPred\exercise.csv")
+df1 = pd.read_csv("calories.csv")
+df2 = pd.read_csv("exercise.csv")
 
-image = Image.open("G:/My Drive/CalPred/Burn.png")
+image = Image.open("Burn.png")
 st.image(image, caption="Calorie Predictor", use_column_width=True)
 
 # Take inputs

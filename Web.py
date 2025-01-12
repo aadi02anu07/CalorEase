@@ -16,7 +16,7 @@ df2 = pd.read_csv("exercise.csv")
 st.title('Calorie Burnt Predictor')
 
 image = Image.open("burn.png")
-st.image(image, caption="Calorie Predictor", use_column_width=True)
+st.image(image, caption="Calorie Predictor", use_container_width=True)
 
 # Take inputs
 user_input_age = st.sidebar.slider('Age', 1, int(df2["Age"].max()), 18)
